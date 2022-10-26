@@ -22,11 +22,11 @@ export default class TvInfo extends Component {
   fetchMovie = () => {
     console.log(this.props.match.params.movie_id)
     const urlMovie = fetch(
-      `https://api.themoviedb.org/3/tv/${this.props.match.params.movie_id}?api_key=17117ab9c18276d48d8634390c025df4&language=en-US`
+      `https://api.themoviedb.org/3/tv/${this.props.match.params.movie_id}?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`
     )
-    const urlCredits = fetch(`https://api.themoviedb.org/3/tv/${this.props.match.params.movie_id}/credits?api_key=17117ab9c18276d48d8634390c025df4
+    const urlCredits = fetch(`https://api.themoviedb.org/3/tv/${this.props.match.params.movie_id}/credits?api_key=${process.env.REACT_APP_API_KEY}
         `)
-    const urlVideos = fetch(`https://api.themoviedb.org/3/tv/${this.props.match.params.movie_id}/videos?api_key=17117ab9c18276d48d8634390c025df4
+    const urlVideos = fetch(`https://api.themoviedb.org/3/tv/${this.props.match.params.movie_id}/videos?api_key=${process.env.REACT_APP_API_KEY}
           `)
     const urls = [urlMovie, urlCredits, urlVideos]
 
