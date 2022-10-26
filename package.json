@@ -2,7 +2,7 @@
   "name": "reactnetflixclone",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://kreshna3131.github.io/reactnetflixclone",
+  "homepage": "https://bukannetflix.netlify.app/",
   "dependencies": {
     "@material-ui/core": "4.11.2",
     "@material-ui/icons": "4.11.2",
