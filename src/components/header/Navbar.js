@@ -23,16 +23,18 @@ const Navbar = () => {
     <nav>
       <div className="logo">
         <Link to="/">
-          <img
-            src=""
-            alt="logo"
-          />
+          <img src="" alt="logo" />
         </Link>
       </div>
       <div className="search-bar">
         <Search />
         <span>
-          <Button className="alert" variant="outlined" color="primary" onClick={handleClickOpen}>
+          <Button
+            className="alert"
+            variant="outlined"
+            color="primary"
+            onClick={handleClickOpen}
+          >
             Open alert Dialog
           </Button>
           <Dialog
@@ -42,15 +44,21 @@ const Navbar = () => {
             aria-labelledby="alert-dialog-title"
             aria-describedby="alert-dialog-description"
           >
-            <Savedlist closefunc={handleClose} />
             <Button
+              style={{
+                width: "80%",
+                marginTop: "10px",
+                marginBottom: "10px",
+                marginLeft: "125px",
+              }}
               variant="outlined"
-              color="primary"
+              color="error"
               onClick={handleClose}
               aria-label="close"
             >
               Close
             </Button>
+            <Savedlist closefunc={handleClose} />
           </Dialog>
         </span>
       </div>

@@ -45,9 +45,13 @@ export default function Savedlist(props) {
 
   return (
     <>
-      <div style={{ background: "black" }}>
-        <br />
-        <Button variant="contained" color="primary" onClick={removeall}>
+      <div style={{ background: "white"}}>
+        <Button
+          style={{ marginTop: "80px" }}
+          variant="contained"
+          color="primary"
+          onClick={removeall}
+        >
           Clear List
         </Button>
         <span>{rows}</span>
